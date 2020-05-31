@@ -1,7 +1,10 @@
-## :camera: Demonstração
+## :camera: Demonstração 1 - Listagem de mais gatos
 
-![gif](github/change.gif)
 ![gif](github/more.gif)
+
+## :camera: Demonstração 2 - Alteração entre categorias
+![gif](github/change.gif)
+
 
 
 ### :books: Tecnologias usadas

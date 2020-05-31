@@ -1,6 +1,8 @@
 import produce from 'immer';
 
-export default function favorite(state = [], action) {
+export const INITIAL_STATE = []
+
+export default function cats(state = INITIAL_STATE, action) {
   switch (action.type) {
     case '@cats/LOAD':
       return [...state, action.cats];
@@ -12,7 +14,6 @@ export default function favorite(state = [], action) {
       });
     case '@cats/MORE':
       return produce(state, (draft) => {
-        console.tron.log(state);
         const [oldCats] = state;
         oldCats.map((cat) => {
           return action.cats.push(cat);

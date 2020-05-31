@@ -97,6 +97,7 @@ class Home extends Component {
                 value={cate.id}
                 onClick={this.handleChangeCategory}
                 type="button"
+                alt="Categories"
               >
                 {Capitalize(cate.name)}
                 <FiChevronRight size={20} />

@@ -8,11 +8,11 @@ import * as CatsActions from '../../store/modules/cats/actions';
 function Cats({ cats }) {
   const [loadCats] = cats;
   return (
-    <CatList>
+    <CatList data-testid="cat-list">
       {loadCats &&
         loadCats.map((cat) => (
           <li key={cat.id}>
-            <img src={cat.url} alt={cat.url} />
+            <img src={cat.url} alt="Imagem de gatos" />
           </li>
         ))}
     </CatList>
